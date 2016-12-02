@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*header*/
+.header{ min-width: 1190px; background: #f5f5f5; height:36px; }
+.header .nav a{ line-height: 36px; color:#6c6c6c; }
+.header .nav_l .a1{ color:#f22e00; padding-left:6px; padding-right:8px;}
+.header .nav_l a{ padding-right:20px; }
+.header .nav .nav_r a{ float:left; width:84px; position:relative; line-height:36px; text-align:center;}
+.header .nav .nav_r a .red{ border-top-color:#f40 }
+.header .nav .nav_r span{border:2px solid transparent; border-top: 2px solid #9c9c9c; position: absolute; top:16px; right: 0; }
+.header .nav .nav_r .line{ height:12px; border:1px solid #e3dde3; top:12px;}
+.header .nav .nav_r .scar{ background:url(../img/car.png) no-repeat 10px 12px; }
+.header .nav .nav_r .star{ background:url(../img/star.png) no-repeat 10px 12px; }
+.header .nav .nav_r .gengduo{ background:url(../img/gengduo.png) no-repeat 4px 16px;}
+.header_ad{ min-width: 1190px; background:#1baebd; }
+.header_ad .xichangtiao{ height:40px;background:url(../img/xichangtiao.png); }
+/*logo区*/
+.logo h1 img{ margin:43px 109px 34px 0;}
+.logo .search{ margin-top:35px;}
+.logo .search .up a{ float:left; width:50px; height:25px; color:#000; line-height:25px; text-align:center;}
+.logo .search .up .cur{ background:#ff5400; color:#fff;  }
+.logo .search .up a:hover{ background:#ff5400; color:#fff; }
+.logo .search .cen{ }
+.logo .search .cen .kuang{ width:618px; height:34px; border:3px solid #f50; padding-left:31px; background:url(../img/fangdajing.png) no-repeat 11px 12px;}
+.logo .search .cen .zi{width:97px; height:40px; background:#f40; text-align:center; line-height:40px; font-size:16px; font-weight:bold; color:#fff; cursor:pointer;}
+.logo .search .cen .gaoji{ width:2em; text-align:center; margin-left:15px;}
+.logo .search .dow a{ float:left; margin-right:9px; line-height:30px;}
+.logo .search .dow .gengduo{ margin: 4px 1px 0 73px; width:39px; height:18px; border:1px solid #e8e8e8; line-height:18px; text-align:center;}
+.logo .erweima1{ width:115px; height:114px; background:url(../img/erweima1.png); margin:15px 0 6px;}
+/*maincon*/
+.maincon{ margin-bottom:17px;}
+.maincon .list{ margin-right:10px;}
+.maincon .list h2{ border:1px solid #f40; border-top:3px solid #f40; background:#f40; color:#fff; line-height:31px; width:175px; font-weight:normal; padding-left:13px;}
+.maincon .list .list_con{ border:1px solid #f40; padding:0 9px 10px; }
+.maincon .list .list_con li{ width:170px; border-bottom:1px solid #e6e7eb; padding-bottom:8px;}
+.maincon .list .list_con li h3{ width:170px; margin-top:7px;}
+.maincon .list .list_con .s1{ padding-left:32px; background:url(../img/gouwulan.png) no-repeat left; font-size:14px; line-height:26px;}
+.maincon .list .list_con .s2{ width:34px; height:18px; border:1px solid #e8e8e8; line-height:18px; padding-left:5px; margin-top:3px; margin-left:38px; font-weight:normal; background: url(../img/xiangyou111.png) no-repeat 32px 6px; font-size:12px;}
+.maincon .list .list_con a{ float:left; padding-left:5px; line-height:24px;}
+.maincon .list .list_con .a1{ width:63px; }
+.maincon .list .list_con .a2{ width:53px;}
+.maincon .list .list_con .a3{ width:39px; position:relative;}
+.maincon .list .list_con .a3 i{ width:9px; height:11px; background:url(../img/newde.png); position:absolute;top:-1px; right:1px;}
+.maincon .list .list_con li .te{ background-image: url(../img/tese.png);}
+.maincon .list .list_con li .cuxiao{ background-image: url(../img/cuxiao.png);}
+.maincon .list .list_con li .chilun{ background-image: url(../img/chilun.png);}
+.maincon .list .list_con .last{ border:none;}
+.maincon .banner{ width:990px;}
+.maincon .banner .ban_nav{ border-bottom:2px solid #f40; line-height:32px; padding-top:2px; margin-bottom:10px;}
+.maincon .banner .ban_nav .d1{ padding-left:22px;}
+.maincon .banner .ban_nav .d1 a{ float:left; padding-right:36px; color:#f40; font-size:16px;}
+.maincon .banner .ban_nav .d1 span{ float:left; width:0; height:14px; border:1px solid #eee8ee; margin-top:7px; margin-right:2px;}
+.maincon .banner .ban_nav .d2 a{ float:left; padding-left:31px; font-size:14px;}
+.maincon .banner .ban_nav .d3{ height:32px; width:81px; background:url(../img/taobaogushi.png);}
+.maincon .banner .ban_nav .d4{ line-height:26px; margin-top:6px;}
+.maincon .banner .ban_con .big{ width:690px; height:480px; background:url(../img/banner.png); margin-right:10px;}
+.maincon .banner .ban_con .menu{ width:290px; }
+.maincon .banner .ban_con .menu .gonggao{ border-bottom:1px solid #e8e8e8; border-top:1px solid #e8e8e8;}
+.maincon .banner .ban_con .menu .gonggao li{ float:left; width:58px; line-height:26px; text-align:center; background:#f7f7f7;}
+.maincon .banner .ban_con .menu .gonggao .cur{ height:27px; width:56px; border-left:1px solid #e8e8e8; border-right:1px solid #e8e8e8; background:#fff; margin-bottom:-1px;}
+.maincon .banner .ban_con .menu .gonggao li:hover{height:27px; width:56px; border-left:1px solid #e8e8e8; border-right:1px solid #e8e8e8; background:#fff; margin-bottom:-1px;}
+.maincon .banner .ban_con .menu .gonggao .last{ width:57px; border-right:1px solid #e8e8e8;}
+.maincon .banner .ban_con .menu .mayun{ width:268px; height:60px; border:1px solid #e8e8e8; border-top:none; padding:11px 10px 0;}
+.maincon .banner .ban_con .menu .mayun p{ width:134px; line-height:24px; float:left;}
+.maincon .banner .ban_con .menu .mayun .p1{ color:#f40;}
+.maincon .banner .ban_con .menu .hi{ width:288px; height:120px; border:1px solid #e8e8e8; background:url(../img/hi-nihao.png); border-top:none;}
+.maincon .banner .ban_con .menu .bianmin{ background:#f4f4f4; width:276px; height:259px; border:1px solid #e8e8e8; border-top:none; padding-left:12px; }
+.maincon .banner .ban_con .menu .bianmin h3{ line-height:36px; padding-left:4px; font-size:16px;}
+.maincon .banner .ban_con .menu .bianmin li{ float:left; width:56px; height:63px; border:1px solid #ddd; border-radius:5px; margin-right:10px; margin-bottom:10px; background:#fff; }
+.maincon .banner .ban_con .menu .bianmin img{ margin-top:10px; margin-left:20px;}
+.maincon .banner .ban_con .menu .bianmin p{ text-align:center; line-height:26px; background:url(../img/xiangxia111.png) no-repeat bottom; }
+.maincon .banner .ban_con .menu .bianmin .fuwu{ }
+.hot{ margin-bottom:10px;}
+.hot .h_bg{width:1171px; height:51px; border:1px solid #e8e8e8; background:#f5f5f5; padding-top:13px; padding-left:17px; line-height:18px; position:relative;}
+.hot .h_bg li{ float:left;}
+.hot .h_bg .wenti2{ margin-right:29px;}
+.hot .h_bg h4{ font-size:14px; background:url(../img/hotbg.png) no-repeat right; height:38px; width:30px; padding-right:15px; margin-right:14px;}
+.hot .h_bg span{ width:63px; margin-right:16px; position:relative;}
+.hot .h_bg i{ width:9px; height:11px; background:url(../img/newde.png); position:absolute; top:0; right:-9px;}
+.hot .h_bg .icon_h{ background-image:url(../img/hotde.png);}
+.hot .h_bg .fuchutu{ background: url(../img/fuchutu.png); width:400px; height:69px; position:absolute; top:-5px; right:36px;}
+/*content*/
+.content{}
+.content .con_l{ margin-right:12px; width:890px; }
+.content .con_l .kuai{ width:315px; height:232px; border:1px solid #e8e8e8; padding:36px 118px 0 0; position:relative; margin-right:10px; margin-bottom:20px;}
+.content .con_l .kuai img{ position:absolute; top:23px; right:-1px;}
+.content .con_l .kuai .title{ width:435px; height:24px; line-height:24px; background:#f5619c; position:absolute; top:-1px; left:-1px;}
+.content .con_l .kuai .title h4{ font-size:16px; color:#fff; padding-left:14px;}
+.content .con_l .kuai .title .piao{ line-height:17px; background:#fff; opacity:0.7; color:#f5619c; padding-left:5px; position:relative; margin-left:29px; margin-top:4px;}
+.content .con_l .kuai .title .piao i{ border:5px solid transparent; border-right:5px solid #fff; position:absolute; top:3px; left:-10px;}
+.content .con_l .kuai .title a{ float:left; color:#fff; }
+.content .con_l .kuai .title span{ float:left; border:1px solid #fff; height:12px; margin:6px 7px 0;}
+.content .con_l .kuai .title .weiba{ padding-right:14px;}
+.content .con_l .kuai .pinlei{ line-height:26px; padding-left:15px;}
+.content .con_l .kuai .pinlei b{ float:left; width:64px;}
+.content .con_l .kuai .pinlei span{ float:left; padding-right:13px;}
+.content .con_l .kuai strong{ display:block; width:315px; border:1px solid #f5f5f5; margin:3px 0 5px;}
+.content .con_l .kuai .red{ color:#f40;}
+.content .con_r{ width:286px; height:800px; border:1px solid #e8e8e8; background:#f5f5f5;}
