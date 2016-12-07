@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" title="对于&quot;在浏览器中预览&quot;为禁用: css/base.css" type="text/css" />
+<style type="text/css">
+
+
+/*----清除默认样式----*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dd,input,textarea,header,footer,section{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+    vertical-align:top;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+textarea{
+    resize:none;
+}
+input,textarea{
+    outline:none;
+    background:none;
+    border:none;
+}
+html{
+    font-size:40px;
+}
+body{
+    font-size:0.3rem;
+    color:#000;
+	font-family:'宋体'
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.w{
+    width: 16rem;
+    margin:0 auto;
+}
+.re{
+    position:relative;
+}
+/* reset css */
+
+
+
+
+
+
+
+
+
+
+</style>
+<link rel="stylesheet" title="对于&quot;在浏览器中预览&quot;为禁用: css/main.css" type="text/css" />
+<style type="text/css">
+
+
+html {
+	font-size: 40px;
+}
+html, body {
+	overflow-x: hidden;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.warp {
+	width: 16rem;
+	margin: 0 auto;
+}
+.header {
+	height: 1.9rem;
+	background: #040404;
+}
+.header .logo {
+	width: 1rem;
+	height: 0.75rem;
+	transform: translate(1.15rem, 0.575rem);
+}
+.header .head_top {
+	color: #fff;
+	font-size: 0.7rem;
+	transform: translateX(6.5rem);
+	line-height: 100%;
+}
+.banner {
+	height: 17rem;
+	background: url(img/banner.jpg) no-repeat;
+	background-size: contain;
+}
+.banner .ban_font {
+	color: #fff;
+}
+.banner .ban_font .p1 {
+	font-size: 0.75rem;
+	transform: translate(1.5rem, 10.125rem);
+}
+.banner .ban_font .p2 span {
+	float: left;
+	line-height: 1.8rem;
+	background: rgba(255,0,0,.8);
+	font-size: 1.375rem;
+	width: 6.65rem;
+	height: 1.8rem;
+	display: block;
+	text-align: center;
+}
+.banner .ban_font .p2 {
+	height: 1.8rem;
+	font-size: 1.5rem;
+	line-height: 100%;
+	transform: translate(1.5rem, 10.575rem)
+}
+.content .con1 {
+	margin-top: 1.75rem;
+}
+.content .con1 h3 {
+	font-size: 1rem;
+	margin-left: 1.175rem;
+}
+.content .con1 h3 .sp1 {
+	color: #e8162c;
+}
+.content .con1 h3 .sp2 {
+	font-weight: bold;
+	margin-left: 1rem;
+}
+.content .con1 p {
+	font-size: 0.6rem;
+	line-height: 1rem;
+	margin-left: 3.2rem;
+	padding-top: 0.8rem;
+	padding-bottom: 1rem;
+	width: 10.25rem;
+	position: relative;
+}
+.content .con1 p .top_line {
+	width: 1.85rem;
+	height: 0.175rem;
+	background: #fe0000;
+	position: absolute;
+	top: 0.4rem;
+	left: 0;
+}
+/*中间轮播图*/
+.content .swiper {
+	height: 8.5rem;
+	background: #fafafa;
+	text-align: center;
+	margin-top: 1.65rem;
+	position: relative;
+}
+.content .swiper img {
+	width: 1.875rem;
+	height: 1.875rem;
+}
+.content .swiper ul {
+	width: 38rem;
+	height: 8.5rem;
+	position: absolute;
+	top: 25%;
+	left: 0;
+}
+.content .swiper li {
+	float: left;
+	width: 5.34rem;
+}
+.warp .content .con3 {
+	background: #29282e;
+	color: #fff;
+	padding-top: 1rem;
+}
+.warp .content .con3 p {
+	color: #fff;
+}
+.warp .content .con3 h3 .sp1 {
+	color: #fff;
+}
+.warp .content .con3 p .top_line {
+	background: #fff;
+}
+.warp .content .con3 .media {
+	width: 13.675rem;
+	background: #ccc;
+	margin-left: 1rem;
+	margin-bottom: 1.2rem;
+}
+/*百度API*/
+.content .con1 .baidu_API {
+	height: 5.125rem;
+	background: #ccc;
+}
+.content .footer {
+	height: 2.875rem;
+	text-align: center;
+	line-height: 2.875rem;
+	font-size: 0.5rem;
+	color: #ccc;
+}
+/*遮罩层*/
+#cover {
+	display: none;
+	color: #fff;
+	width: 14rem;
+	position: fixed;
+	top: 1.9rem;
+	left: 0;
+	background: rgba(0,0,0,.7);
+	padding: 1rem;
+	z-index: 99;
+	text-align: center;
+}
+#cover p {
+	border-bottom: 0.05rem solid #fff;
+	width: 10rem;
+	margin:0 auto;
+}
+#cover a {
+	color: #fff;
+	font-size: 1rem;
+}
+#close a{ color:#fff;}
+
+
+
+
+</style>
+<link rel="stylesheet" title="对于&quot;在浏览器中预览&quot;为禁用: dist/css/swiper.min.css">
+<style type="text/css">
+
+/**
+ * Swiper 3.4.0
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * 
+ * http://www.idangero.us/swiper/
+ * 
+ * Copyright 2016, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Licensed under MIT
+ * 
+ * Released on: October 16, 2016
+ */
+.swiper-container{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;z-index:1}.swiper-container-no-flexbox .swiper-slide{float:left}.swiper-container-vertical>.swiper-wrapper{-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column}.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}.swiper-container-android .swiper-slide,.swiper-wrapper{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-o-transform:translate(0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.swiper-container-multirow>.swiper-wrapper{-webkit-box-lines:multiple;-moz-box-lines:multiple;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap}.swiper-container-free-mode>.swiper-wrapper{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 auto}.swiper-slide{-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;width:100%;height:100%;position:relative}.swiper-container-autoheight,.swiper-container-autoheight .swiper-slide{height:auto}.swiper-container-autoheight .swiper-wrapper{-webkit-box-align:start;-ms-flex-align:start;-webkit-align-items:flex-start;align-items:flex-start;-webkit-transition-property:-webkit-transform,height;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform,height}.swiper-container .swiper-notification{position:absolute;left:0;top:0;pointer-events:none;opacity:0;z-index:-1000}.swiper-wp8-horizontal{-ms-touch-action:pan-y;touch-action:pan-y}.swiper-wp8-vertical{-ms-touch-action:pan-x;touch-action:pan-x}.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:27px;height:44px;margin-top:-22px;z-index:10;cursor:pointer;-moz-background-size:27px 44px;-webkit-background-size:27px 44px;background-size:27px 44px;background-position:center;background-repeat:no-repeat}.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}.swiper-button-prev,.swiper-container-rtl .swiper-button-next{background-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 27 44'><path d='M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z' fill='#007aff'/></svg>");left:10px;right:auto}.swiper-button-prev.swiper-button-black,.swiper-container-rtl .swiper-button-next.swiper-button-black{background-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 27 44'><path d='M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z' fill='#000000'/></svg>")}.swiper-button-prev.swiper-button-white,.swiper-container-rtl .swiper-button-next.swiper-button-white{background-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 27 44'><path d='M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z' fill='#ffffff'/></svg>")}.swiper-button-next,.swiper-container-rtl .swiper-button-prev{background-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 27 44'><path d='M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z' fill='#007aff'/></svg>");right:10px;left:auto}.swiper-button-next.swiper-button-black,.swiper-container-rtl .swiper-button-prev.swiper-button-black{background-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 27 44'><path d='M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z' fill='#000000'/></svg>")}.swiper-button-next.swiper-button-white,.swiper-container-rtl .swiper-button-prev.swiper-button-white{background-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 27 44'><path d='M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z' fill='#ffffff'/></svg>")}.swiper-pagination{position:absolute;text-align:center;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);z-index:10}.swiper-pagination.swiper-pagination-hidden{opacity:0}.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:0;width:100%}.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2}button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none}.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}.swiper-pagination-white .swiper-pagination-bullet{background:#fff}.swiper-pagination-bullet-active{opacity:1;background:#007aff}.swiper-pagination-white .swiper-pagination-bullet-active{background:#fff}.swiper-pagination-black .swiper-pagination-bullet-active{background:#000}.swiper-container-vertical>.swiper-pagination-bullets{right:10px;top:50%;-webkit-transform:translate3d(0,-50%,0);-moz-transform:translate3d(0,-50%,0);-o-transform:translate(0,-50%);-ms-transform:translate3d(0,-50%,0);transform:translate3d(0,-50%,0)}.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{margin:5px 0;display:block}.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 5px}.swiper-pagination-progress{background:rgba(0,0,0,.25);position:absolute}.swiper-pagination-progress .swiper-pagination-progressbar{background:#007aff;position:absolute;left:0;top:0;width:100%;height:100%;-webkit-transform:scale(0);-ms-transform:scale(0);-o-transform:scale(0);transform:scale(0);-webkit-transform-origin:left top;-moz-transform-origin:left top;-ms-transform-origin:left top;-o-transform-origin:left top;transform-origin:left top}.swiper-container-rtl .swiper-pagination-progress .swiper-pagination-progressbar{-webkit-transform-origin:right top;-moz-transform-origin:right top;-ms-transform-origin:right top;-o-transform-origin:right top;transform-origin:right top}.swiper-container-horizontal>.swiper-pagination-progress{width:100%;height:4px;left:0;top:0}.swiper-container-vertical>.swiper-pagination-progress{width:4px;height:100%;left:0;top:0}.swiper-pagination-progress.swiper-pagination-white{background:rgba(255,255,255,.5)}.swiper-pagination-progress.swiper-pagination-white .swiper-pagination-progressbar{background:#fff}.swiper-pagination-progress.swiper-pagination-black .swiper-pagination-progressbar{background:#000}.swiper-container-3d{-webkit-perspective:1200px;-moz-perspective:1200px;-o-perspective:1200px;perspective:1200px}.swiper-container-3d .swiper-cube-shadow,.swiper-container-3d .swiper-slide,.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top,.swiper-container-3d .swiper-wrapper{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d}.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:10}.swiper-container-3d .swiper-slide-shadow-left{background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-right{background-image:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-top{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-bottom{background-image:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-coverflow .swiper-wrapper,.swiper-container-flip .swiper-wrapper{-ms-perspective:1200px}.swiper-container-cube,.swiper-container-flip{overflow:visible}.swiper-container-cube .swiper-slide,.swiper-container-flip .swiper-slide{pointer-events:none;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden;z-index:1}.swiper-container-cube .swiper-slide .swiper-slide,.swiper-container-flip .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-active .swiper-slide-active,.swiper-container-flip .swiper-slide-active,.swiper-container-flip .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-cube .swiper-slide-shadow-bottom,.swiper-container-cube .swiper-slide-shadow-left,.swiper-container-cube .swiper-slide-shadow-right,.swiper-container-cube .swiper-slide-shadow-top,.swiper-container-flip .swiper-slide-shadow-bottom,.swiper-container-flip .swiper-slide-shadow-left,.swiper-container-flip .swiper-slide-shadow-right,.swiper-container-flip .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden}.swiper-container-cube .swiper-slide{visibility:hidden;-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;width:100%;height:100%}.swiper-container-cube.swiper-container-rtl .swiper-slide{-webkit-transform-origin:100% 0;-moz-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-next,.swiper-container-cube .swiper-slide-next+.swiper-slide,.swiper-container-cube .swiper-slide-prev{pointer-events:auto;visibility:visible}.swiper-container-cube .swiper-cube-shadow{position:absolute;left:0;bottom:0;width:100%;height:100%;background:#000;opacity:.6;-webkit-filter:blur(50px);filter:blur(50px);z-index:0}.swiper-container-fade.swiper-container-free-mode .swiper-slide{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out}.swiper-container-fade .swiper-slide{pointer-events:none;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity}.swiper-container-fade .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-fade .swiper-slide-active,.swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-zoom-container{width:100%;height:100%;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-moz-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-moz-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;text-align:center}.swiper-zoom-container>canvas,.swiper-zoom-container>img,.swiper-zoom-container>svg{max-width:100%;max-height:100%;object-fit:contain}.swiper-scrollbar{border-radius:10px;position:relative;-ms-touch-action:none;background:rgba(0,0,0,.1)}.swiper-container-horizontal>.swiper-scrollbar{position:absolute;left:1%;bottom:3px;z-index:50;height:5px;width:98%}.swiper-container-vertical>.swiper-scrollbar{position:absolute;right:3px;top:1%;z-index:50;width:5px;height:98%}.swiper-scrollbar-drag{height:100%;width:100%;position:relative;background:rgba(0,0,0,.5);border-radius:10px;left:0;top:0}.swiper-scrollbar-cursor-drag{cursor:move}.swiper-lazy-preloader{width:42px;height:42px;position:absolute;left:50%;top:50%;margin-left:-21px;margin-top:-21px;z-index:10;-webkit-transform-origin:50%;-moz-transform-origin:50%;transform-origin:50%;-webkit-animation:swiper-preloader-spin 1s steps(12,end) infinite;-moz-animation:swiper-preloader-spin 1s steps(12,end) infinite;animation:swiper-preloader-spin 1s steps(12,end) infinite}.swiper-lazy-preloader:after{display:block;content:"";width:100%;height:100%;background-image:url("data:image/svg+xml;charset=utf-8,<svg viewBox='0 0 120 120' xmlns='http%3A//www.w3.org/2000/svg' xmlns%3Axlink='http%3A//www.w3.org/1999/xlink'><defs><line id='l' x1='60' x2='60' y1='7' y2='27' stroke='#6c6c6c' stroke-width='11' stroke-linecap='round'/></defs><g><use xlink%3Ahref='#l' opacity='.27'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(30 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(60 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(90 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(120 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(150 60,60)'/><use xlink%3Ahref='#l' opacity='.37' transform='rotate(180 60,60)'/><use xlink%3Ahref='#l' opacity='.46' transform='rotate(210 60,60)'/><use xlink%3Ahref='#l' opacity='.56' transform='rotate(240 60,60)'/><use xlink%3Ahref='#l' opacity='.66' transform='rotate(270 60,60)'/><use xlink%3Ahref='#l' opacity='.75' transform='rotate(300 60,60)'/><use xlink%3Ahref='#l' opacity='.85' transform='rotate(330 60,60)'/></g></svg>");background-position:50%;-webkit-background-size:100%;background-size:100%;background-repeat:no-repeat}.swiper-lazy-preloader-white:after{background-image:url("data:image/svg+xml;charset=utf-8,<svg viewBox='0 0 120 120' xmlns='http%3A//www.w3.org/2000/svg' xmlns%3Axlink='http%3A//www.w3.org/1999/xlink'><defs><line id='l' x1='60' x2='60' y1='7' y2='27' stroke='#fff' stroke-width='11' stroke-linecap='round'/></defs><g><use xlink%3Ahref='#l' opacity='.27'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(30 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(60 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(90 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(120 60,60)'/><use xlink%3Ahref='#l' opacity='.27' transform='rotate(150 60,60)'/><use xlink%3Ahref='#l' opacity='.37' transform='rotate(180 60,60)'/><use xlink%3Ahref='#l' opacity='.46' transform='rotate(210 60,60)'/><use xlink%3Ahref='#l' opacity='.56' transform='rotate(240 60,60)'/><use xlink%3Ahref='#l' opacity='.66' transform='rotate(270 60,60)'/><use xlink%3Ahref='#l' opacity='.75' transform='rotate(300 60,60)'/><use xlink%3Ahref='#l' opacity='.85' transform='rotate(330 60,60)'/></g></svg>")}@-webkit-keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg)}}@keyframes swiper-preloader-spin{100%{transform:rotate(360deg)}}
+
+</style>
+<title>Untitle Html</title>
+<style>
+
+</style>
+<script src="comjs/zepto.min.js"></script>
+<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=doc.documentElement.clientWidth*20/320+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+		$(function()
+		{
+			$(document).on('click','#menu',function()
+			{
+				$('#cover').css('display','block');	
+			});
+			$(document).on('click','#close',function()
+			{
+				$('#cover').css('display','none');	
+			});
+/*			$('#menu').on('click',function()
+			{
+				$('#cover').css('display','block');	
+			});
+			$('#close').on('click',function()
+			{
+				$('#cover').css('display','none');		
+			});
+*/			$('a').on('click',function()
+			{
+				$('#cover').css('display','none');		
+			});
+		});
+</script>
+</head>
+
+<body>
+<div class="warp">
+    <header class="header">
+        <h1 class="logo"><a id="menu" href="javascript:;"><img src="img/fun.png" /></a></h1>
+        <h2 class="head_top" id="close"><a>大数医达</a></h2>
+        <div id="cover">
+            <p><a href="#about_me">关于我们</a></p>
+            <p><a href="javascript:;">产品介绍</a></p>
+            <p><a href="#contact">联系我们</a></p>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="ban_font">
+            <h4 class="p1">人工智能的一小步，</h4>
+            <h3 class="p2 clearfix">
+                <span>医疗健康</span>
+                一大步</h3>
+        </div>
+    </div>
+    <div class="content">
+        <div class="con1">
+            <h3 id="about_me">
+                <span class="sp1">01</span>
+                <span class="sp2">关于我们</span>
+            </h3>
+            <p>
+                <span class="top_line"></span>
+                北京大数医达科技有限公司是一家在人工智能、大数据、云计算方面拥有国际领先水平的高科技企业专注于多元异构数据处理，深度挖掘与机器学习。</p>
+        </div>
+        <div class="swiper swiper-container">
+            <ul class="clearfix swiper-wrapper">
+                <li class="swiper-slide"><img src="img/acs.svg"><br>
+                    <br>
+                    <br>
+                    <strong>顶尖团队</strong><br>
+                    <br>
+                    <span>zhenglijun</span>
+                    <br>
+                    <span>term</span>
+                </li>
+                <li  class="swiper-slide"><img src="img/ais.svg"><br>
+                    <br>
+                    <br>
+                    <strong>顶尖团队</strong><br>
+                    <br>
+                    <span>zhenglijun</span>
+                    <br>
+                    <span>term</span>
+                </li>
+                <li  class="swiper-slide"><img src="img/bigData.svg"><br>
+                    <br>
+                    <br>
+                    <strong>顶尖团队</strong><br>
+                    <br>
+                    <span>zhenglijun</span>
+                    <br>
+                    <span>term</span>
+                </li>
+                <li  class="swiper-slide"><img src="img/cloud.svg"><br>
+                    <br>
+                    <br>
+                    <strong>顶尖团队</strong><br>
+                    <br>
+                    <span>zhenglijun</span>
+                    <br>
+                    <span>term</span>
+                </li>
+                <li  class="swiper-slide"><img src="img/elite.svg"><br>
+                    <br>
+                    <br>
+                    <strong>顶尖团队</strong><br>
+                    <br>
+                    <span>zhenglijun</span>
+                    <br>
+                    <span>term</span>
+                </li>
+                <li  class="swiper-slide"><img src="img/leading.svg"><br>
+                    <br>
+                    <br>
+                    <strong>顶尖团队</strong><br>
+                    <br>
+                    <span>zhenglijun</span>
+                    <br>
+                    <span>term</span>
+                </li>
+                <li  class="swiper-slide"><img src="img/medical.svg"><br>
+                    <br>
+                    <br>
+                    <strong>顶尖团队</strong><br>
+                    <br>
+                    <span>zhenglijun</span>
+                    <br>
+                    <span>term</span>
+                </li>
+            </ul>
+			<div class="swiper-pagination swiper-pagination-progress"><span class="swiper-pagination-progressbar" style="transform: translate3d(0px, 0px, 0px) scaleX(0.5) scaleY(1); transition-duration: 300ms;"></span></div>
+        </div>
+        <script src="dist/js/swiper.jquery.min.js"></script>
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			slidesPerView: 'auto',
+			paginationClickable: true,
+			spaceBetween: 30,
+			paginationType: 'progress'
+		});
+        </script>
+        <div class="con1">
+            <h3 id="our_leader">
+                <span class="sp1">02</span>
+                <span class="sp2">团队领袖——邓侃CTO</span>
+            </h3>
+            <p>
+                <span class="top_line"></span>
+                北京大数医达科技有限公司是一家在人工智能、大数据、云计算方面拥有国际领先水平的高科技企业专注于多元异构数据处理，深度挖掘与机器学习。</p>
+        </div>
+        <div class="con1 con3">
+            <h3 id="our_future">
+                <span class="sp1">03</span>
+                <span class="sp2">我们的愿景</span>
+            </h3>
+            <p>
+                <span class="top_line"></span>
+                北京大数医达科技有限公司是一家在人工智能、大数据、云计算方面拥有国际领先水平的高科技家在人工智能、大数据、云计算方面拥有国际领先水平的高科技家在人工智能、大数据、云计算方面拥有国际领先水平的高科技企业专注于多元异构数据处理，深度挖掘与机器学习。</p>
+            <video class="media" src="hd3.mp4" >"视频过大上传太慢"</video>
+        </div>
+        <div class="con1">
+            <h3 id="contact">
+                <span class="sp1">04</span>
+                <span class="sp2">联系我们</span>
+            </h3>
+            <p>
+                <span class="top_line"></span>
+                地址：北京市海淀区东北旺西路8号中关村软件园一期3号楼3b区1206室。<br/>
+                公司邮箱：zhenglijun@sina.com<br/>
+                公司网址：www.zhenglijun.com</p>
+            <div class="baidu_API">百度API接口</div>
+        </div>
+        <div class="footer">京ICP备34567432244号—1</div>
+    </div>
+</div>
+</body>
+</html>
