@@ -15,6 +15,7 @@ html {
 
 body {
     background-color: #eeeeee;
+    font-family: sans-serif;
 }
 
 * {
@@ -22,6 +23,7 @@ body {
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
     /*去除bootstrap默认圆角样式*/
+    box-sizing: border-box;
 }
 
 img {
@@ -38,9 +40,29 @@ iframe {
 .navbar-default{
     background-color: #b3b4b7;
 }
-.grid-item {
-    width: 200px;
+/*砖石插件*/
+.grid{
+    margin-left:5%;
 }
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    width: 20%;
+    float: left;
+}
+
+.grid-item--gigante {
+    width:60%;
+    z-index: 2; /* above other items */
+}
+.grid-item:hover {
+    cursor: pointer;
+}
+/*-------*/
 .resume{
     max-width: 860px;
     margin-bottom: 400px;
@@ -67,3 +89,7 @@ iframe {
 .listMenu .glyphicon{
     font-size: 20px;
 }
+
+
+
+
