@@ -42,7 +42,7 @@ iframe {
 }
 /*砖石插件*/
 .grid{
-    margin-left:5%;
+    margin-left:8%;
     margin-bottom: 100px;
 }
 .grid:after {
@@ -53,6 +53,7 @@ iframe {
 
 .grid-item {
     width: 20%;
+    margin-bottom: 50px;
     float: left;
 }
 
@@ -63,6 +64,34 @@ iframe {
 .grid-item:hover {
     cursor: pointer;
 }
+/*.grid-item--width{*/
+    /*width:60%;*/
+/*}*/
+/*.grid-item--width2{*/
+    /*width: 30%;*/
+/*}*/
+/*.grid-item--width3{*/
+    /*width: 30%;*/
+/*}*/
+/*.grid-item--width4{*/
+    /*width: 55%;*/
+/*}*/
+/*.grid-item--width5{*/
+    /*width: 38%;*/
+/*}*/
+/*.grid-item--width6{*/
+    /*width: 30%;*/
+/*}*/
+/*.grid-item--width8{*/
+    /*width: 38%;*/
+/*}*/
+/*.grid-item--width11{*/
+    /*width: 38%;*/
+/*}*/
+/*.grid-item--width12{*/
+    /*width: 30%;*/
+/*}*/
+
 /*-------*/
 .resume{
     max-width: 860px;

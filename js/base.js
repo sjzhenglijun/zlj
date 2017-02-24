@@ -8,13 +8,13 @@ $('#noDrag').mousedown(function () {
 
 //砖石插件
 
-// external js: masonry.pkgd.js
-
 var grid = document.querySelector('.grid');
 var msnry = new Masonry( grid, {
     itemSelector: '.grid-item',
-    columnWidth: 100,
-    stagger: 20,
+    columnWidth: 90,
+    gutter: 15,
+    stagger: 30
+
 });
 
 grid.addEventListener( 'click', function( event ) {
