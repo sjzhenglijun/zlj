@@ -1,429 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<title>个人主页----郑丽君</title>
-	<!--fonts-->
-		<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<!--//fonts-->
-			<link href="css/bootstrap.css" rel="stylesheet">
-			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- for-mobile-apps -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="郑丽君的个人主页" />
-		<meta name="description" content="郑丽君的个人主页">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //for-mobile-apps -->	
-	<!-- js -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script src="js/modernizr.custom.97074.js"></script>
-	<!-- js -->
-	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-	<!-- start-smoth-scrolling -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--强制ie浏览器以最新版本浏览-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="renderer" content="webkit"><!--兼容国产浏览器,如360-->
+    <!-- 上述4个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="Description" content="web前端,前端开发,前端开发工程师,h5开发">
+    <meta name="Keywords" content="郑丽君,前端">
+    <title>郑丽君</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<!-- banner -->
-<div id="home" class="banner">
-	<div class="container">
-		<div class="banner-grids">
-			<div class="col-md-6 navigation">
-				<div class="nav-left">
-					<div class="grid__item color-4">
-						<a class="link link--kumya" href="#home"><span>郑丽君</span></a>
-					</div>
-				</div>
-				<div class="nav-right">
-						<span class="menu"><img src="images/menu.png" alt="" /></span>
-							<nav class="cl-effect-1">
-								<ul class="nav1">
-									<li><a class="scroll" href="#home">新</a></li>
-									<li><a class="scroll" href="#about">的</a></li>
-									<li><a class="scroll" href="#portfolio">一</a></li>
-									<li><a class="scroll" href="#services">天</a></li>
-									<li><a class="scroll" href="#contact">开始了</a></li>
-									<li><a class="active" href="other-pages/Mi/index.html">小米</a></li>
-									<li><a class="active" href="other-pages/Dashu/index.html">12.2项目</a></li>
-								</ul>
-							</nav>
-							<!-- script for menu -->
-							<script> 
-								$( "span.menu" ).click(function() {
-								$( "ul.nav1" ).slideToggle( 300, function() {
-								 // Animation complete.
-								});
-								});
-							</script>
-							<!-- //script for menu -->
+<header>
+    <nav class="navbar navbar-default navzlj" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music"></span> 郑丽君</a>
+                <div id="sinaWeatherTool" class="navbar-brand hidden-xs">
+                    <iframe name="sinaWeatherTool"
+                            src="http://weather.news.sina.com.cn/chajian/iframe/weatherStyle0.html?city=%E5%8C%97%E4%BA%AC"
+                            width="200" height="20" marginwidth="0" marginheight="0" hspace="0" vspace="0"
+                            frameborder="0"
+                            scrolling="no"></iframe>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">主页</a></li>
+                    <li><a href="pages/jianli.html">简历</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Demos<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">jmeter</a></li>
+                            <li><a href="#">EJB</a></li>
+                            <li><a href="#">Jasper Report</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">手机端xx页面</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">另一个分离的链接</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section id="myCarousel" class="carousel slide hidden-xs">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner" id="Mainbg">
+        <div class="item active">
+            <img src="image/bg1.png" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="image/bg2.png" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="image/bg3.png" alt="Third slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">&lsaquo;
+    </a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">&rsaquo;
+    </a>
+</section>
+<section class="jumbotron">
+    <div class="container">
+        <h1 class="text-center">show<span class="glyphicon glyphicon-arrow-down"></span></h1>
+    </div>
+</section>
+<section class="grid">
+    <div class="row">
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img class="img-responsive center-block" src="image/img1.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img2.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img3.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img4.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img5.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img6.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img7.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img8.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img9.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img10.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img11.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-1 col-md-1 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img12.png" alt="图挂了">
+            </a>
+        </div>
 
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="col-md-8 banner-image text-center">
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!-- //banner -->
-<!-- about -->
-<div id="about" class="about">
-	<div class="container">
-		<div class="about-info">
-				<h3>关于我</h3>
-				<h4>who i am i</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-				   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-				   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
-		<div class="about-grids">
-		   	<div class="col-md-6 about-grid">
-		   		<h4>What I do and my experience</h4>
-		   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                   eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                   Ut enim ad minim veniam, quis nostrud exercitation
-                   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		   	</div>
-		   	<div class="col-md-6 about-grid">
-		   		<h4>My goals</h4>
-		   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                   eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                   Ut enim ad minim veniam, quis nostrud exercitation
-                   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		   	</div>
-		   	<div class="clearfix"> </div>
-		</div>   
-	</div>
-</div>
-<!-- //about -->
-<!-- my skills -->
-	<div class="our-skills">
-		<div class="container">
-			<div class="skill-info">
-				<h2>MY SKILLS</h2>
-			</div>
-			<div class="skill-grids">
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-1"></div>
-						<p>Web Design</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-2"></div>
-						<p>HTML/CSS</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-3"></div>
-						<p>Graphic Design</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-4"></div>
-						<p>UI/UX</p>
-					</div>
-					<div class="clearfix"> </div>
-				 <script type="text/javascript" src="js/circles.js"></script>
-					         <script>
-								var colors = [
-										['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852']
-									];
-								for (var i = 1; i <= 5; i++) {
-									var child = document.getElementById('circles-' + i),
-										percentage = 40 + (i * 10);
-										
-									Circles.create({
-										id:         child.id,
-										percentage: percentage,
-										radius:     80,
-										width:      10,
-										number:   	percentage / 10,
-										text:       '%',
-										colors:     colors[i - 1]
-									});
-								}
-						
-				</script>
-			</div>
-		</div>	
-	</div>
-<!-- //my skills -->
-<div id="portfolio" class="gallery">
-		<div class="container">
-				<script src="js/jquery.chocolat.js"></script>
-			<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-			<!--light-box-files -->
-			<script type="text/javascript" charset="utf-8">
-			$(function() {
-				$('.gallery a').Chocolat();
-			});
-			</script>
-			<h3>PORTFOLIO</h3>
-			<section>
-				<ul id="da-thumbs" class="da-thumbs">
-					<li>
-						<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a1.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a2.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="images/a3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a3.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-								
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="images/a4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a4.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-								
-							</div>
-						</a>
-					</li>
-					<li>	
-						<a href="images/a5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a5.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-								
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="images/a6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a6.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-								
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="images/a7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a7.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-								
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a1.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-								
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a2.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-								
-							</div>
-						</a>
-					</li>
-					<div class="clearfix"> </div>
-				</ul>
-			</section>
-				<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
-				<script type="text/javascript">
-					$(function() {
-						$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-					});
-				</script>
-        </div>	
-</div>
-<!--//gallery-->
-<!--services-->
-<div id="services" class="services">
-	<div class="container">
-		<div class="ser-head">
-			<h3>FEATURED SERVICES</h3>
-		</div>
-		<div class="wel-grids">
-			<div class="col-md-4 wel-grid text-center">
-				<div class="btm-clr">
-					<figure class="icon">
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</figure>
-					<h3>VOLUPTATEM</h3>
-					<p> Nemo enim ipsam voluptatem
-					quia voluptas sit aspernatur aut
-					odit aut fugi.</p>
-				</div>
-			</div>
-			<div class="col-md-4 wel-grid btm-gre text-center">
-				<div class="btm-clr">
-					<figure class="icon">
-						<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-					</figure>
-					<h3>VOLUPTATEM</h3>
-					<p> Nemo enim ipsam voluptatem
-					quia voluptas sit aspernatur aut
-					odit aut fugi.</p>
-				</div>
-			</div>
-			<div class="col-md-4 wel-grid text-center">
-				<div class="btm-clr">
-					<figure class="icon">
-						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-					</figure>
-					<h3>VOLUPTATEM</h3>
-					<p> Nemo enim ipsam voluptatem
-					quia voluptas sit aspernatur aut
-					odit aut fugi.</p>
-				</div>
-			</div>
-			<div class="col-md-4 wel-grid btm-gre text-center">
-				<div class="btm-clr">
-					<figure class="icon">
-						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-					</figure>
-					<h3>VOLUPTATEM</h3>
-					<p> Nemo enim ipsam voluptatem
-					quia voluptas sit aspernatur aut
-					odit aut fugi.</p>
-				</div>
-			</div>
-			<div class="col-md-4 wel-grid text-center">
-				<div class="btm-clr">
-					<figure class="icon">
-						<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-					</figure>
-					<h3>VOLUPTATEM</h3>
-					<p> Nemo enim ipsam voluptatem
-					quia voluptas sit aspernatur aut
-					odit aut fugi.</p>
-				</div>
-			</div>
-			<div class="col-md-4 wel-grid btm-gre text-center">
-				<div class="btm-clr">
-					<figure class="icon">
-						<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-					</figure>
-					<h3>VOLUPTATEM</h3>
-					<p> Nemo enim ipsam voluptatem
-					quia voluptas sit aspernatur aut
-					odit aut fugi.</p>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!--//services-->
-<!--news-->
-<div class="news">
-	<div class="container">
-		<h3>NEWSLETTER SIGN UP</h3>
-		<p> Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing. </p>
-		<div class="na-m">
-			<div class="name">
-				<form>
-					<input type="text" placeholder="Enter email id" required>
-				</form>
-			</div>
-			<div class="button">
-				<form>
-					<input type="submit" value="Subscribe">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--//news-->
-<!-- get-in -->
-<div id="contact" class="get-in-touch">
-	<div class="container">
-		<div class="get-info text-center">
-			<h3>GET IN TOUCH</h3>
-			<h4><i>Feel Free To Contact Us</i></h4>
-			<p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</p>
-		</div>
-	</div>
-	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819" frameborder="0" style="border:0"></iframe>
-	</div>
-</div>
-<!-- //get-in -->
-<!-- contact-us -->
-<div class="contact-us">
-	<div class="container">
-		<div class="contact-grids">
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></div>
-				<p>Jl. Pahlawan VII No.247-D Sidoarjo-Surabaya-Indonesia</p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
-				<p><a href="mailto:info@example.com">rudhisasmito@gmail.com</a></p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></div>
-				<p>+613 0000 0000</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="contact-info">
-			<form>
-				<input type="text" placeholder="Your Name" required>
-				<input type="text" placeholder="Your E-Mail" required>
-				<input type="text" placeholder="Subject" required>
-				<textarea placeholder="Your Message" required></textarea>
-				<input type="submit" value="SEND MESSAGE">
-			</form>
-		</div>
-	</div>
-</div>
-<!-- //contact-us -->
-<!-- footer -->
-<div class="copy-right">
-	<div class="container">
-		<p> &copy; 2015 Peak. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
-	</div>
-</div>
-<!-- footer -->
-<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-6 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img13.png" alt="图挂了">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-6 grid-item">
+            <a href="javascript:;" class="thumbnail">
+                <img src="image/img14.png" alt="图挂了">
+            </a>
+        </div>
+    </div>
+</section>
+<section class="text-center nanimonai"><h3>continue......</h3></section>
+<footer class="navbar navbar-default navzlj text-center">
+    <div class="container">
+        <p class="footer">@zhenglijun product</p>
+    </div>
+</footer>
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--砖石插件-->
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/base.js"></script>
 </body>
 </html>
