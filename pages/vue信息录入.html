@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--强制ie浏览器以最新版本浏览-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="renderer" content="webkit"><!--兼容国产浏览器,如360-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <!-- 上述meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="Description" content="web前端,前端开发,前端开发工程师,h5开发">
+    <meta name="Keywords" content="郑丽君,前端">
+    <title>vue信息录入</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="box" class="container">
+    <form role="form" class="well">
+        <div class="form-group">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" class="form-control" placeholder="请输入用户名" v-model="username">
+        </div>
+        <div class="form-group">
+            <label for="age">年龄:</label>
+            <input type="text" id="age" class="form-control text" placeholder="请输入年龄" v-model="userage">
+        </div>
+        <div class="form-group">
+            <label for="job">职业:</label>
+            <input type="text" id="job" class="form-control text" placeholder="请输入职业" v-model="userjob">
+        </div>
+        <div class="form-group">
+            <input type="button" value="添加" class="btn btn-primary" v-bind:data-toggle="isModal" v-bind:data-target="isTarget" @click="add()">
+            <input type="reset" value="清空" class="btn btn-danger">
+        </div>
+    </form>
+    <div class="panel panel-info">
+        <div class="panel-heading text-center">用户信息列表</div>
+        <table class="panel-body table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center">序号</th>
+                    <th class="text-center">姓名</th>
+                    <th class="text-center">年龄</th>
+                    <th class="text-center">职业</th>
+                    <th class="text-center">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(item,index) in msgData">
+                <td class="text-center">{{index+1}}</td>
+                <td class="text-center">{{item.name}}</td>
+                <td class="text-center">{{item.age}}</td>
+                <td class="text-center">{{item.job}}</td>
+                <td class="text-center">
+                    <button class="btn-primary btn-xs juzhong" data-toggle="modal" data-target="#layger" @click="nowIndex=index;modalTitle='提示:是否删除!'">删除</button>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr v-show="msgData.length!=0">
+                    <td class="text-center" colspan="5">
+                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#layger" @click="nowIndex=-99;modalTitle='提示:是否全部删除!'">删除全部</button>
+                    </td>
+                </tr>
+                <tr v-show="msgData.length==0">
+                    <td class="text-center" colspan="5">
+                        <p class="text-muted">暂无信息...</p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!--模态框-->
+        <div role="dialog" class="modal fade" id="layger">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                        <h4 class="modal-title text-danger">{{modalTitle}}</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" @click="deleteMsg(nowIndex)">确认</button>
+                        <button class="btn btn-primary" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery1.11.2.min.js"></script>
+<script src="../js/bootstrap3.3.4.min.js"></script>
+<script src="../js/vue.js"></script>
+<script src="../js/myVue.js"></script>
+</body>
+</html>
