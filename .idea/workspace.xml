@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5c15114-006d-4f79-b2c7-f1dd4a68ceff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/vue信息录入.html" afterPath="$PROJECT_DIR$/pages/vue信息录入.html" />
-    </list>
+    <list default="true" id="b5c15114-006d-4f79-b2c7-f1dd4a68ceff" name="Default" comment="" />
     <ignored path="zlj.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -229,12 +226,12 @@
       <workItem from="1482238364665" duration="423000" />
       <workItem from="1488872199003" duration="124000" />
       <workItem from="1488872327982" duration="189000" />
-      <workItem from="1488873998692" duration="111000" />
+      <workItem from="1488873998692" duration="364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3017000" />
+    <option name="totallyTimeSpent" value="3270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
