@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vue信息录入.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vue信息录入.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/vue信息录入.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jianli.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jianli.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/jianli.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+            <state relative-caret-position="750">
+              <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -242,12 +242,12 @@
       <workItem from="1488872199003" duration="124000" />
       <workItem from="1488872327982" duration="189000" />
       <workItem from="1488873998692" duration="364000" />
-      <workItem from="1488981199584" duration="120000" />
+      <workItem from="1488981199584" duration="190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3390000" />
+    <option name="totallyTimeSpent" value="3460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -502,6 +502,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/jianli.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/vue信息录入.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -509,14 +517,6 @@
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/jianli.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
