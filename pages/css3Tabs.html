@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        #tab{
+            width:500px;
+            margin: 20px auto;
+            position: relative;
+        }
+        #tab div h3{
+            width: 150px;
+            height:30px;
+            border:1px solid #000000;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            line-height:30px;
+            box-sizing: border-box;
+            border-bottom: 0;
+            background-color: #fff;
+            z-index: 9;
+            top:1px;
+            cursor: pointer;
+        }
+        #tab p{
+            position: absolute;
+            left:0;
+            top:30px;
+            width: 448px;
+            height:300px;
+            border:1px solid #000000;
+            background-color: #fff;
+        }
+        #tab div{
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .tabItem1 h3{
+            position: absolute;
+            top:0;
+            left:0;
+
+        }
+        .tabItem2 h3{
+             position: absolute;
+             top:0;
+             left:150px;
+        }
+        .tabItem3 h3{
+              position: absolute;
+              top:0;
+              left:300px;
+        }
+        .tabItem1{
+            z-index: 999;
+        }
+        #tab .tabItem1:hover,
+        #tab .tabItem2:hover,
+        #tab .tabItem3:hover
+        {
+            z-index:9999;
+            color: red;
+        }
+        #tab .tabItem1:hover p,
+        #tab .tabItem2:hover p,
+        #tab .tabItem3:hover p
+        {
+            background-color:#cccccc;
+        }
+        #tab .tabItem1:hover h3,
+        #tab .tabItem2:hover h3,
+        #tab .tabItem3:hover h3
+        {
+            background-color:#cccccc;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>css版选项卡</h2>
+    <div id="tab">
+        <div class="tabItem1">
+            <h3 class="tabHead">aaa</h3>
+            <p class="tabContent">默认显示第一个</p>
+        </div>
+        <div class="tabItem2">
+            <h3 class="tabHead">bbb</h3>
+            <p class="tabContent">bbbbbbbbbbbbbbbbbbbb</p>
+        </div>
+        <div class="tabItem3">
+            <h3 class="tabHead">ccc</h3>
+            <p class="tabContent">cccccccccccccccccccc</p>
+        </div>
+    </div>
+</body>
+</html>

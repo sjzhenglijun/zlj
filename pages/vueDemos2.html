@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--强制ie浏览器以最新版本浏览-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="renderer" content="webkit"><!--兼容国产浏览器,如360-->
+    <!-- 上述4个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="Description" content="web前端,前端开发,前端开发工程师,h5开发">
+    <meta name="Keywords" content="郑丽君,前端">
+    <title>郑丽君</title>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navzlj" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-music"></span> 郑丽君</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Demos<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="vueDemos.html">Vue信息录入</a></li>
+                        <li class="active"><a href="#">Vue跨域获取信息</a></li>
+                        <li class="divider"></li>
+                        <li><a href="css3Tabs.html">css3版选项卡</a></li>
+                        <!--<li><a href="#">暂无</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">暂无</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="vue_get" class="container">
+    <h3 class="h3 text-center">百度搜索下拉框</h3>
+    <div class="panel panel-info">
+        <div class="panel-heading" data-toggle="tooltip" data-placement="left" title="鼠标键盘均可操作">
+            <h4 class="panel-title">请输入搜索信息</h4>
+        </div>
+        <div class="panel-body">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入搜索信息..." v-model="txt" @keyup="get($event)" @keydown.down.prevent="changeDown()" @keydown.up.prevent="changeUp()">
+                <span class="input-group-addon btn btn-info" id="basic-addon1" @click="searchIt()"><span class="glyphicon glyphicon-search"></span>搜索</span>
+            </div>
+            <ul class="list-group" >
+                <li class="list-group-item" v-for="(item,index) in getData" :class="{active:index==nowIndex}" @mouseover="xuanting(index)" @click="dj_search()">{{item}}</li>
+            </ul>
+            <div class="well well-sm" v-show="getData.length==0">暂无信息...</div>
+        </div>
+        <div class="panel-footer text-right"><button class="btn btn-info" @click="deleteAll()">清空搜索内容</button></div>
+    </div>
+</div>
+<footer class="navbar navbar-default navzlj text-center ">
+    <div class="container">
+        <p class="footer">@zhenglijun product</p>
+    </div>
+</footer>
+
+<script src="../js/jquery1.11.2.min.js"></script>
+<script src="../js/bootstrap3.3.4.min.js"></script>
+<script src="../js/vue.js"></script>
+<script src="../js/vue-resource.js"></script>
+<script src="../js/myVue2.js"></script>
+</body>
+</html>

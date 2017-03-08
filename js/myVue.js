@@ -2,7 +2,7 @@
  * Created by zlj on 17/3/7.
  */
 var vm=new Vue({
-    el:'#box',
+    el:'#vueBox',
     data:{
         msgData:[
         ],

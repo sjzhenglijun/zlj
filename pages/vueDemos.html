@@ -1,28 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!--强制ie浏览器以最新版本浏览-->
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <meta name="renderer" content="webkit"><!--兼容国产浏览器,如360-->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no,email=no">
-    <!-- 上述meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 上述4个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="Description" content="web前端,前端开发,前端开发工程师,h5开发">
     <meta name="Keywords" content="郑丽君,前端">
-    <title>vue信息录入</title>
+    <title>郑丽君</title>
+    <!-- Bootstrap-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.min.js"></script>
     <script src="../js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
-<div id="box" class="container">
-    <h2 class="h3 text-center">vue版信息录入</h2>
+<nav class="navbar navbar-default navzlj" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-music"></span> 郑丽君</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Demos<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="#">Vue信息录入</a></li>
+                        <li><a href="vueDemos2.html">Vue跨域获取信息</a></li>
+                        <li class="divider"></li>
+                        <li><a href="css3Tabs.html">css3版选项卡</a></li>
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">分离的链接</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">另一个分离的链接</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="vueBox" class="container">
+    <h3 class="h3 text-center">vue版信息录入</h3>
     <form role="form" class="well">
         <div class="form-group">
             <label for="username">用户名:</label>
@@ -45,13 +77,13 @@
         <div class="panel-heading text-center">用户信息列表</div>
         <table class="panel-body table table-bordered table-hover">
             <thead>
-                <tr>
-                    <th class="text-center">序号</th>
-                    <th class="text-center">姓名</th>
-                    <th class="text-center">年龄</th>
-                    <th class="text-center">职业</th>
-                    <th class="text-center">操作</th>
-                </tr>
+            <tr>
+                <th class="text-center">序号</th>
+                <th class="text-center">姓名</th>
+                <th class="text-center">年龄</th>
+                <th class="text-center">职业</th>
+                <th class="text-center">操作</th>
+            </tr>
             </thead>
             <tbody>
             <tr v-for="(item,index) in msgData">
@@ -65,16 +97,16 @@
             </tr>
             </tbody>
             <tfoot>
-                <tr v-show="msgData.length!=0">
-                    <td class="text-center" colspan="5">
-                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#layger" @click="nowIndex=-99;modalTitle='提示:是否全部删除!'">删除全部</button>
-                    </td>
-                </tr>
-                <tr v-show="msgData.length==0">
-                    <td class="text-center" colspan="5">
-                        <p class="text-muted">暂无信息...</p>
-                    </td>
-                </tr>
+            <tr v-show="msgData.length!=0">
+                <td class="text-center" colspan="5">
+                    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#layger" @click="nowIndex=-99;modalTitle='提示:是否全部删除!'">删除全部</button>
+                </td>
+            </tr>
+            <tr v-show="msgData.length==0">
+                <td class="text-center" colspan="5">
+                    <p class="text-muted">暂无信息...</p>
+                </td>
+            </tr>
             </tfoot>
         </table>
         <!--模态框-->
@@ -94,6 +126,12 @@
         </div>
     </div>
 </div>
+<footer class="navbar navbar-default navzlj text-center ">
+    <div class="container">
+        <p class="footer">@zhenglijun product</p>
+    </div>
+</footer>
+
 <script src="../js/jquery1.11.2.min.js"></script>
 <script src="../js/bootstrap3.3.4.min.js"></script>
 <script src="../js/vue.js"></script>
