@@ -1,6 +1,10 @@
 /**
  * Created by zlj on 17/3/7.
  */
+Vue.component('zlj',{
+    template:'#myComponent1',
+    props:['msg']
+});
 var vm=new Vue({
     el:'#vueBox',
     data:{
@@ -53,3 +57,4 @@ var vm=new Vue({
         }
     }
 });
+

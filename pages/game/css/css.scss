@@ -1,0 +1,302 @@
+@charset "utf-8";
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style: none;
+}
+img {
+    border: 0;
+}
+body,
+button,
+dd,
+dl,
+form,
+h1,
+h2,
+h3,
+input,
+p,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+button,
+input,
+select,
+textarea {
+    border: none;
+    outline: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.re {
+    position: relative;
+}
+.ab {
+    position: absolute;
+}
+.none {
+    display: none;
+}
+.ar {
+    text-align: right;
+}
+.ac {
+    text-align: center;
+}
+.ellipsis {
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: "";
+}
+.clearfix {
+    zoom: 1;
+}
+.logend_ {
+    height: 110px;
+}
+.logendTxt {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.logendTxt p,.logOut {
+    padding: 0 4px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+}
+.logOut {
+    text-decoration: underline;
+}
+#nick_name {
+    display: block;
+    float: right;
+    max-width: 110px;
+    height: 20px;
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.link_warp {
+    position: absolute;
+    top: -257px;
+    right: 74px;
+    width: 500px;
+    height: 105px;
+    background: url(../images/bg_btn02.png);
+    text-align: center;
+    
+    a {
+        display: block;
+        float: left;
+        width: 250px;
+        height: 103px;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+#maskLayer {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+#alertInfo {
+    display: none;
+    background: #9f090b;
+    border: 1px solid #9f090b;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    left: 50%;
+    top: -100%;
+    position: absolute;
+    z-index: 200;
+    max-width: 900px;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+#alertInfo .close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    z-index: 220;
+    font-size: 34px;
+    line-height: 14px;
+    color: #fff;
+}
+.infoBtn {
+    margin: auto;
+    text-align: center;
+}
+.infoBtn a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    margin: 0 10px;
+    width: 115px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #fff;
+    background: #ca1f22;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+.logInfo {
+    width: 380px;
+    padding-bottom: 32px;
+}
+.logInfo ul {
+    margin: 0 auto;
+    padding-top: 32px;
+    width: 282px;
+}
+.logInfo li {
+    float: left;
+    display: inline;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.logInfo li input,
+.logInfo li label,
+.selBox {
+    float: left;
+    display: inline;
+    line-height: 28px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+}
+.logInfo li input,
+.selBox {
+    padding: 0 5px;
+    width: 196px;
+    background: #fff;
+    border: 1px solid #000;
+    height: 26px;
+    line-height: 26px;
+    color: #000;
+    font-size: 14px;
+}
+.logInfo li label {
+    padding-right: 6px;
+    text-align: right;
+    height: 28px;
+    width: 64px;
+}
+.selBox {
+    position: relative;
+}
+.selBox em,
+.selBox em b,
+.selBox i {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-style: normal;
+}
+.selBox i {
+    padding: 0 5px;
+    width: 196px;
+    z-index: 6;
+}
+.selBox em {
+    z-index: 5;
+    width: 26px;
+    height: 100%;
+    background: #0E2803 url("../images/sel.png") no-repeat 0 center;
+    overflow: hidden;
+    border-left: 1px solid #000;
+}
+.selBox em b {
+    display: none;
+}
+.selBox .selC {
+    display: none;
+    background: #fff;
+    position: absolute;
+    border: 1px solid #000;
+    top: 26px;
+    width: 100%;
+    left: -1px;
+}
+.selBox .selC a {
+    display: block;
+    padding: 0 5px;
+    color: #000;
+    line-height: 28px;
+}
+.selBox .selC a:hover {
+    text-decoration: none;
+}
+.selBox .selC a.selectedV,
+.selBox .selC a:hover {
+    background: #ccc;
+}
+.logInfo li #yzM {
+    width: 104px;
+    margin-right: 11px;
+}
+.logInfo li #verifyImg {
+    background: #fff;
+    width: 80px;
+    height: 28px;
+}
+.bindInfo li.tsli,
+.logInfo li.tsli {
+    color: yellow;
+    margin-bottom: 0;
+}
+

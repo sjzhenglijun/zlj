@@ -1,0 +1,67 @@
+/*背景*/
+.bj{ width:16rem; height: 107.5rem; background: url(../img/bj.png) no-repeat; background-size: cover; margin: 0 aoto;}
+
+/*头部*/
+header {height: 1.75rem; }
+header .tklogo{width:3.25rem; height: 100%; display: block; float: left;}
+header .login,header .hname{ width: 12.75rem ; height: 100%; float: left;}
+header .login{display: none;}
+header .login li,header .hname li { width: 50%; height: 100%;float: left;}
+header .login li a {display: block; width: 100%; height: 100%; line-height: 1.75rem ; text-align: center; font-size: 0.75rem ;}
+header .login .login_1{ background: #791d00; color:#fff ;}
+header .login .login_2{ background: #373737; color: #8D8C8B;}
+header .hname li {color: #b29f9b; font-size: 0.35rem; line-height:1.75rem  ; }
+header .hname{ background: #2c1900;}
+/*主图*/
+.banner{ height: 15rem; width:100%; overflow: hidden;}
+.banner div{height: 1.7rem; margin-top: 12.05rem; color: #f25c0d; font-size: 0.5rem; line-height: 0.8rem; width: 12rem;
+border: 1px solid #f25c0d; border-radius: 0.5rem; margin-left: 2rem; text-align: center;}
+
+/*冠军竞猜**/
+.cham{ width: 100%; height: 24.65rem ; }
+.cham ul{overflow: hidden; margin-left: 0.425rem; margin-top: 1.65rem;}
+.cham ul li {float: left; width: 7.075rem; height: 10rem ;margin-left: 0.325rem ; margin-bottom: 0.325rem ;}
+.cham ul .rg{ background: url(../img/guan_1.png) no-repeat;background-size: cover; }
+.cham ul .jzba{ background: url(../img/guan_2.png) no-repeat;background-size: cover; }
+.cham ul .pp{ background: url(../img/guan_3.png) no-repeat;background-size: cover;  margin-bottom: 0;}
+.cham ul .tato{ background: url(../img/guan_4.png) no-repeat;background-size: cover;  margin-bottom: 0;}
+.cham ul li a { width: 6.325rem; height: 1rem; line-height: 1rem ; background: #feae31; display: block;  text-align: center; margin-left: 0.35rem;
+margin-top: 8.675rem; font-size:0.6rem ;}
+.cham .cham_b{ height: 3.6rem; width: 14rem; font-size: 0.45rem; color: #989ba4; line-height: 0.65rem; margin-left: 20px; margin-top: 0.1rem;}
+/*大神推荐*/
+.ds{ width: 100%; height: 40.25rem; overflow: hidden; margin-top: 3rem; overflow: hidden;}
+.ds .ds_msg{ padding:0 0.1rem;margin-left:1rem; width: 13.8rem ; height: 7.5rem ;  line-height: 0.85rem ; font-size: 0.45rem; color: #ddd; border: 1px solid #6c0300; border-radius: 0.25rem;;
+}
+.ds .ds_msg p{text-indent: 0.9rem; }
+.ds .ds_msg h5{ display: block; width:4.25rem ; height: 0.75rem; background: #6c0300; font-size: 0.51rem; line-height: 0.75rem ; text-align: center; color: #ddd;
+margin-left: 4.875rem; margin-top: 0.2rem; border-radius: 0.5rem;}
+.ds ul {margin-left: 0.27rem; width: 15.6rem; overflow: hidden; margin-top: 0.4rem;}
+.ds ul li{width:15.4rem; height: 7.85rem; float: left; margin-bottom: 0.2rem;}
+.ds .ds_name{ width:10.3rem; height: 2.8rem; margin-top: 0.75rem; margin-left: 4.6rem; }
+.ds .ds_name h4{ font-size: 0.6rem ; color: #FFF; line-height: 0.7rem;}
+.ds .ds_name p{color: #989ba4; font-size: 0.45rem; line-break: 0.6rem ;}
+.ds .ds_tk{width:9rem; height: 3.25rem; margin-top: 0.35rem; margin-left: 0.3rem;}
+.ds .ds_tk p{color: #989ba4; font-size: 0.45rem; line-break: 0.4rem ;}
+.ds ul .ds_1{  background: url(../img/ds_1.png) no-repeat; background-size: cover;}
+.ds ul .ds_2{  background: url(../img/ds_2.png) no-repeat; background-size: cover;}
+.ds ul .ds_3{  background: url(../img/ds_3.png) no-repeat; background-size: cover;}
+.ds ul .ds_4{  background: url(../img/ds_4.png) no-repeat; background-size: cover;}
+/*特惠活动*/
+.tehui{width: 100%; height: 16rem;}
+.tehui h3{ display: block; width: 100%; background: url(../img/tehui.png) no-repeat; background-size: cover; height: 2.5rem;} 
+.tehui ul{margin-left: 0.95rem;}
+.tehui ul li{ width:6.725rem; height:7.35rem; float: left; margin-right: 0.3rem; margin-bottom: 0.3rem; }
+.tehui ul li a{ display: block; width: 5.5rem; height: 0.8rem; text-align: center; line-height: 0.8rem; background: #feae31;
+font-weight: bold; font-family: "微软雅黑"; font-size: 0.45rem; margin-top: 6rem; margin-left: 0.6rem;}  
+.tehui ul .tehui_1{background: url(../img/tk_1.png) no-repeat; background-size: cover;}
+.tehui ul .tehui_2{background: url(../img/tk_2.png) no-repeat; background-size: cover;}
+.tehui ul .tehui_3{background: url(../img/tk_3.png) no-repeat; background-size: cover;}
+.tehui ul .tehui_4{background: url(../img/tk_4.png) no-repeat; background-size: cover;}
+/*弹层*/
+.tanceng{overflow: hidden; width: 16rem; height: 104rem; background: rgba(0,0,0,0.5); position: fixed; z-index: 10; top: 0; left: 0;}
+.tanceng div { width: 13.75rem; height: 6.5rem ; background: #122246; border: 1px #3d76b2 solid; position:absolute; top: -7rem; left: 1.125rem;}
+.tanceng p{height: 4.25rem; text-align: center; line-height: 4.25rem; width: 100%; color: #fff; font-size: 0.75rem;}
+.tanceng a{ display: block; width: 5rem; height: 1.25rem; line-height: 1.25rem; background: #feae31; color: #000; 
+font-weight: bold; float: left; text-align: center;}
+.tanceng_c{ margin-left: 1.55rem;}
+.tanceng_q{ margin-left:1.2rem ;}
